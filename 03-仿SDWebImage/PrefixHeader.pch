@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  03-仿SDWebImage
+//
+//  Created by Mac on 16/4/22.
+//  Copyright © 2016年 www.ZXZ.com. All rights reserved.
+//
+
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+
+#ifdef DEBUG  // 调试阶段
+#define ZXZLog(...) NSLog(__VA_ARGS__)
+#else // 发布阶段
+#define ZXZLog(...)
+#endif
